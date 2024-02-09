@@ -31,3 +31,21 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Define a custom container class */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xxl:max-w-9xl;
+}
+
+.gradient-text {
+  @apply font-cairo font-extrabold text-xl ml-3;
+  background: linear-gradient(
+    to right,
+    var(--tw-color-custom-orange, #ff4305) 0%,
+    var(--tw-color-custom-light-orange, #f58700) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
